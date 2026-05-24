@@ -1,0 +1,24 @@
+name: Agent check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Summarise changes
+        run: |
+          echo "Files changed in this PR:" > summary.txt
+          git diff --name-only origin/main >> summary.txt
+          cat summary.txt
+
+      - name: Upload summary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pr-summary
+          path: summary.txt
