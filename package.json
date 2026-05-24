@@ -1,0 +1,25 @@
+{
+  "name": "gh600-study",
+  "version": "1.0.0",
+  "description": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KINGSLEYCO-widnes/gh600-study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KINGSLEYCO-widnes/gh600-study/issues"
+  },
+  "homepage": "https://github.com/KINGSLEYCO-widnes/gh600-study#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  }
+}
