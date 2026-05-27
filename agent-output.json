@@ -1,0 +1,7 @@
+{
+  "task": "summarise changed files in PR",
+  "files_changed": ["README.md", "server.mjs", ".gitignore"],
+  "file_count": 3,
+  "timestamp": "2026-05-25T06:22:29Z",
+  "status": "complete"
+}
